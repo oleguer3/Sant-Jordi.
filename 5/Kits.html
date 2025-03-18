@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exemple Grid</title>
+	<style>
+            h1 {
+        	color: #E67400;
+        	text-align: center;
+    	}
+              h2 {
+        	color: #E67400;
+        	text-align: left;
+    	}
+            h3 {
+        	color: #E67400;
+        	text-align: center;
+    	}
+    	.container {
+        	display: grid; /* Defineix aquest contenidor com un grid */
+        	grid-template-columns: 1fr 1fr; /* Crea dues columnes: la primera de 200px i la segona flexible */
+        	gap: 10px; /* Defineix l'espai entre els elements del grid */
+    	}
+    	.item {
+        	background-color: white; /* Defineix el color de fons dels elements */
+        	padding: 20px; /* Afegeix espai intern dins dels elements */
+        	text-align: center; /* Centra el text horitzontalment */
+        	border:0,5px solid #ddd; /* Afegeix una vora fina gris */
+    	}
+        .menu {
+        	background-color: white; /* Defineix el color de fons dels elements */
+        	padding: 20px; /* Afegeix espai intern dins dels elements */
+            grid-column: 1 / 2 ;
+    	    grid-row: 2 / 4  ;
+        	border: 0,5px solid #ddd; /* Afegeix una vora fina gris */
+    	}
+        .menu2 {
+        	background-color: white; /* Defineix el color de fons dels elements */
+        	padding: 20px; /* Afegeix espai intern dins dels elements */
+            grid-column: 2 / 4 ;
+    	    grid-row: 1 / 2  ;
+        	border: 0,5px solid #ddd; /* Afegeix una vora fina gris */
+    	}
+         .menu3 {
+        	background-color: white; /* Defineix el color de fons dels elements */
+        	padding: 20px; /* Afegeix espai intern dins dels elements */
+            grid-column: 2 / 4 ;
+    	    grid-row: 2 / 4  ;
+        	border: 0,5px solid #ddd; /* Afegeix una vora fina gris */
+    	}
+        .container {
+    	display: grid; /* Defineix el contenidor com un grid */
+    	grid-template-columns: 1fr 1fr 1fr  ; /* Dues columnes */
+    	grid-template-rows: 150px 500px   ; /* Crea dues files: la primera de 100px i la segona flexible */
+    	gap: 10px; /* Espai entre columnes i files */
+	}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+    	<div class="menu"> <a href="Accesoris.html" target="_blank">  <h2>Accesoris</h2></a> <a href="Lubricants.html" target="_blank">  
+      <h2>Lubricants</h2> </a><a href="Plastics.html" target="_blank"> <h2>Plastics</h2></a><a href="Kits.html" target="_blank"> <h2>Kits</h2> </a><a href="Escapes.html" target="_blank"><h2>Escapes</h2></a></div> <!-- Element de la primera columna -->
+    	<div class="menu2"><h1>KITS</h1></div> <!-- Element de la segona columna -->
+        <div class="item"><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzPnmPmFqemV7J9W7QyR0MTbkrFW41a1cn4g&s height=100 width=150 ></div> <!-- Element de la primera columna -->
+    	<div class="menu3"><img src="imatge.png" height=800 width=800
+			   ></div> <!-- Element de la segona columna -->
+       </div>
+</body>
+</html>
